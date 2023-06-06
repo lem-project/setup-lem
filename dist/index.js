@@ -3299,8 +3299,8 @@ function run() {
             const home = os.homedir();
             const tmp = os.tmpdir();
             const latestVersion = yield getLatestTag();
-            const inputVersion = "v" + core.getInput("version");
-            const version = (inputVersion == 'snapshot') ? latestVersion : inputVersion;
+            const inputVersion = core.getInput("version");
+            const version = (inputVersion == 'snapshot') ? latestVersion : "v" + inputVersion;
             const platform = getPlatform();
             const archiveName = `lem-${platform}-${version}.zip`; // lem-windows-v2.0.0.zip
             core.startGroup("Fetch Lem");
