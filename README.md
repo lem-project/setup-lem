@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/release/jcs090218/setup-lem.svg?logo=github)](https://github.com/jcs090218/setup-lem/releases/latest)
+<a href="#"><img align="right" src="https://raw.githubusercontent.com/Shinmera/lem-icon/gh-pages/icon-blue.svg" alt="Lem"></a>
 
 # setup-lem
 > Install Lem for GitHub Actions workflow
