@@ -1,0 +1,11 @@
+name: 'Set up Lem'
+description: 'Install a specific Lem version for use in your workflow.'
+author: 'Shen, Jen-Chieh'
+inputs:
+  version:
+    description: 'The version of Lem to install, e.g. "2.0.0", or "snapshot" for a recent development version.'
+    default: 'snapshot'
+    
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
