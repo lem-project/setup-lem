@@ -19,7 +19,7 @@ jobs:
     ...
 
     # Install Lem
-    - uses: jcs090218/setup-lem@master
+    - uses: setup-lem/setup-lem@master
       with:
         version: 'snapshot'
 
