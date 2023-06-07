@@ -1,13 +1,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Release](https://img.shields.io/github/release/jcs090218/setup-lem.svg?logo=github)](https://github.com/jcs090218/setup-lem/releases/latest)
+[![Release](https://img.shields.io/github/release/lem-project/setup-lem.svg?logo=github)](https://github.com/lem-project/setup-lem/releases/latest)
 
 <a href="#"><img align="right" src="https://raw.githubusercontent.com/Shinmera/lem-icon/gh-pages/icon-blue.svg" alt="Lem"></a>
 
 # setup-lem
 > Install Lem for GitHub Actions workflow
 
-[![CI](https://github.com/jcs090218/setup-lem/actions/workflows/test.yml/badge.svg)](https://github.com/jcs090218/setup-lem/actions/workflows/test.yml)
-[![Build](https://github.com/jcs090218/setup-lem/actions/workflows/build.yml/badge.svg)](https://github.com/jcs090218/setup-lem/actions/workflows/build.yml)
+[![CI](https://github.com/lem-project/setup-lem/actions/workflows/test.yml/badge.svg)](https://github.com/lem-project/setup-lem/actions/workflows/test.yml)
+[![Build](https://github.com/lem-project/setup-lem/actions/workflows/build.yml/badge.svg)](https://github.com/lem-project/setup-lem/actions/workflows/build.yml)
 
 ## 🔨 Usage
 
