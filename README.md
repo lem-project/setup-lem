@@ -19,7 +19,7 @@ jobs:
     ...
 
     # Install Lem
-    - uses: setup-lem/setup-lem@master
+    - uses: lem-project/setup-lem@master
       with:
         version: 'snapshot'
 
