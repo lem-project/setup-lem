@@ -3317,6 +3317,9 @@ function run() {
                 const options = { recursive: true, force: false };
                 yield io.mv(`${tmp}/lem-${version}`, `${home}/lem-${version}`, options);
                 core.addPath(`${home}/lem-${version}`);
+                if (platform == 'darwin') {
+                    core.addPath(`${home}/lem-${version}/lem.app/Contents/MacOS/`);
+                }
             }
             core.endGroup();
             /* Chmod so let the operating system know it's executable! */
