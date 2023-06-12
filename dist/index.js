@@ -3302,7 +3302,8 @@ function run() {
             const inputVersion = core.getInput("version");
             const version = (inputVersion == 'snapshot') ? latestVersion : "v" + inputVersion;
             const platform = getPlatform();
-            const archiveName = `lem-${platform}-${version}.zip`; // lem-windows-v2.0.0.zip
+            const extension = (platform == 'linux') ? 'tar.gz' : 'zip';
+            const archiveName = `lem-${platform}-${version}.${extension}`; // lem-windows-v2.0.0.zip
             core.startGroup("Fetch Lem");
             {
                 let downloadUrl = `https://github.com/lem-project/lem/releases/download/${version}/${archiveName}`;
