@@ -67,7 +67,7 @@ async function run(): Promise<void> {
 
             fs.mkdirSync(`${tmp}/lem-${version}`);
             if (platform == 'linux')
-                await exec.exec('untar', [`${tmp}/${archiveName}`, '-C', `${tmp}/lem-${version}`]);
+                await exec.exec('tar', ['-xf', `${tmp}/${archiveName}`, '-C', `${tmp}/lem-${version}`]);
             else
                 await exec.exec('unzip', [`${tmp}/${archiveName}`, '-d', `${tmp}/lem-${version}`]);
             const options = { recursive: true, force: false };

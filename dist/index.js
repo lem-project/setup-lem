@@ -3315,7 +3315,7 @@ function run() {
                 ]);
                 fs_1.default.mkdirSync(`${tmp}/lem-${version}`);
                 if (platform == 'linux')
-                    yield exec.exec('untar', [`${tmp}/${archiveName}`, '-C', `${tmp}/lem-${version}`]);
+                    yield exec.exec('tar', ['-xf', `${tmp}/${archiveName}`, '-C', `${tmp}/lem-${version}`]);
                 else
                     yield exec.exec('unzip', [`${tmp}/${archiveName}`, '-d', `${tmp}/lem-${version}`]);
                 const options = { recursive: true, force: false };
