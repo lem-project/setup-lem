@@ -66,7 +66,10 @@ async function run(): Promise<void> {
             ]);
 
             fs.mkdirSync(`${tmp}/lem-${version}`);
-            await exec.exec('unzip', [`${tmp}/${archiveName}`, '-d', `${tmp}/lem-${version}`]);
+            if (platform == 'linux')
+                await exec.exec('untar', [`${tmp}/${archiveName}`, '-C', `${tmp}/lem-${version}`]);
+            else
+                await exec.exec('unzip', [`${tmp}/${archiveName}`, '-d', `${tmp}/lem-${version}`]);
             const options = { recursive: true, force: false };
             await io.mv(`${tmp}/lem-${version}`, `${home}/lem-${version}`, options);
             core.addPath(`${home}/lem-${version}`);

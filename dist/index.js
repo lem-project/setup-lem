@@ -3314,7 +3314,10 @@ function run() {
                     `${tmp}/${archiveName}`
                 ]);
                 fs_1.default.mkdirSync(`${tmp}/lem-${version}`);
-                yield exec.exec('unzip', [`${tmp}/${archiveName}`, '-d', `${tmp}/lem-${version}`]);
+                if (platform == 'linux')
+                    yield exec.exec('untar', [`${tmp}/${archiveName}`, '-C', `${tmp}/lem-${version}`]);
+                else
+                    yield exec.exec('unzip', [`${tmp}/${archiveName}`, '-d', `${tmp}/lem-${version}`]);
                 const options = { recursive: true, force: false };
                 yield io.mv(`${tmp}/lem-${version}`, `${home}/lem-${version}`, options);
                 core.addPath(`${home}/lem-${version}`);
