@@ -69,6 +69,10 @@ async function run(): Promise<void> {
             const options = { recursive: true, force: false };
             await io.mv(`${tmp}/lem-${version}`, `${home}/lem-${version}`, options);
             core.addPath(`${home}/lem-${version}`);
+
+            if (platform == 'darwin') {
+                core.addPath(`${home}/lem-${version}/lem.app/Contents/MacOS/`);
+            }
         }
         core.endGroup();
 
