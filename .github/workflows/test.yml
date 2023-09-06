@@ -19,7 +19,7 @@ jobs:
         lem_version: [2.0.0, snapshot]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - uses: ./
       with:
