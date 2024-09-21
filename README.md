@@ -36,7 +36,7 @@ This example is testing your package in below environment.
 |:--------|:-------|:---------|:---------------------------------------------------------------------------------------------|
 | version | string | snapshot | The version of Lem to install, e.g. "2.0.0", or "snapshot" for a recent development version. |
 
-## License
+## ⚜️ License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
